@@ -1,0 +1,16 @@
+<%= form_with(model: micropost, local: true) do |micropost_form| %>
+
+  <div class="field">
+    <%= micropost_form.label :content %>
+    <%= micropost_form.text_field :content %>
+  </div>
+
+  <div class="field">
+    <%= micropost_form.label :user_id %>
+    <%= micropost_form.text_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= micropost_form.submit %>
+  </div>
+<% end %>

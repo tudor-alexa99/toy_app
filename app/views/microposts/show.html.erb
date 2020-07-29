@@ -1,2 +1,14 @@
 <h1>Microposts#show</h1>
 <p>Find me in app/views/microposts/show.html.erb</p>
+
+<p id="notice"><%= notice %></p>
+
+<div>
+  <h2>Content: </h2>
+  <%= @micropost.content %>
+</div>
+
+<div>
+  <h2>User id: </h2>
+  <%= @micropost.user_id %>
+</div>
